@@ -3,7 +3,7 @@ package com.deepblue.designpatterns_003_behavior.designpatterns_010_template_met
 public class Client {
 
     public static void main(String[] args) {
-        AbstractClass template = new ConcreteClass();
+        AbstractClass template = new ChildConcreteClass();
         template.executeTemplateMethod();
     }
 

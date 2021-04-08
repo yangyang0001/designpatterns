@@ -2,6 +2,9 @@ package com.deepblue.designpatterns_003_behavior.designpatterns_010_template_met
 
 public abstract class AbstractClass {
 
+    private String username;
+    private String password;
+
     public void before() {
         System.out.println("AbstractClass before()");
     }
@@ -17,5 +20,22 @@ public abstract class AbstractClass {
         before();
         doMethod();
         after();
+    }
+
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
