@@ -8,15 +8,18 @@ public class Client {
 
         Enhancer enhancer = new Enhancer();
 
-        enhancer.setSuperclass(RealSubject.class);
+        enhancer.setSuperclass(FirstSubject.class);
+        enhancer.setCallback(new CommonInterceptor());
+        Subject subject0 = (Subject) enhancer.create();
+        String response0 = subject0.request();
+        System.out.println("first response is  :" + response0);
 
-        enhancer.setCallback(new SubjectInterceptor());
 
-        Subject subject = (Subject) enhancer.create();
-
-        String response = subject.request();
-
-        System.out.println("response is :" + response);
+        enhancer.setSuperclass(SecondSubject.class);
+        enhancer.setCallback(new CommonInterceptor());
+        Subject subject1 = (Subject) enhancer.create();
+        String response1 = subject1.request();
+        System.out.println("second response is :" + response1);
 
     }
 }
