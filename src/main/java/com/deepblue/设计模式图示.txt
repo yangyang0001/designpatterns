@@ -8,3 +8,7 @@ Bridge    模式: 一条小河隔开了两个岸边, 现在需要一座桥进行
         类的实现层次: 在哪里实现
 
 strategy  模式: 整体地替换算法, 核心关键: 处理同一个问题的不同解决方法!
+
+Proxy 模式:
+    动态代理: jdk   Subject subject = Proxy.newProxyInstance(); 必须要有接口, 必须有实现!
+    静态代理: cglib Subject subject = Enhancer.create();        没必要有接口, 必须有实现!
