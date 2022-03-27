@@ -4,4 +4,8 @@ public interface Subject {
 
     public String sayHello(String username);
 
+    public String request(String param);
+
+    public String response();
+
 }
