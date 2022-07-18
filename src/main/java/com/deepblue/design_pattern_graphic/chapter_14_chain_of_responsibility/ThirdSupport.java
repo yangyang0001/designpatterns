@@ -4,7 +4,7 @@ public class ThirdSupport extends Support {
 
 	@Override
 	public boolean resolve(Trouble trouble) {
-		System.out.println("third  resolve success");
+		System.out.println("third support resolve ...");
 		return true;
 	}
 }

@@ -4,7 +4,7 @@ public class SecondSupport extends Support {
 
 	@Override
 	public boolean resolve(Trouble trouble) {
-		System.out.println("second resolve failed");
+		System.out.println("second support resolve ...");
 		return false;
 	}
 }

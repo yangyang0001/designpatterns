@@ -4,7 +4,7 @@ public class FirstSupport extends Support {
 
 	@Override
 	public boolean resolve(Trouble trouble) {
-		System.out.println("first  resolve failed");
+		System.out.println("first support resolve ...");
 		return false;
 	}
 }
