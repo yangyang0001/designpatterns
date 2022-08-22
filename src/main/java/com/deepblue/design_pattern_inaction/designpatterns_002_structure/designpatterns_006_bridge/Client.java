@@ -13,7 +13,7 @@ public class Client {
 
     public static void main(String[] args) {
         Abstraction abstraction = new ExtendAbstraction();
-        AbstractionImplementor implementor = new ConcreateImplementor();
+        AbstractionImplementor implementor = new ConcreteImplementor();
 
         Client.callMethod(abstraction);
         Client.callNewMethod(implementor);

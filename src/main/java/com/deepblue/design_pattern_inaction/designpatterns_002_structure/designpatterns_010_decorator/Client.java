@@ -7,9 +7,9 @@ public class Client {
     }
 
     public static void main(String[] args) {
-        ConcreateDecoratorA decoratorA = new ConcreateDecoratorA();
-        ConcreateDecoratorB decoratorB = new ConcreateDecoratorB();
-        ConcreateComponent  component  = new ConcreateComponent();
+        ConcreteDecoratorA decoratorA = new ConcreteDecoratorA();
+        ConcreteDecoratorB decoratorB = new ConcreteDecoratorB();
+        ConcreteComponent component  = new ConcreteComponent();
 
         decoratorA.setComponent(decoratorB);
         decoratorB.setComponent(component);

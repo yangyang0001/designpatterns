@@ -10,14 +10,14 @@ public class Client {
 
     public static void main(String[] args) {
         FactoryMethod method = new FactoryMethod();
-        AbstractCreator creatorA = new ConcreateCreatorA();
-        AbstractCreator creatorB = new ConcreateCreatorB();
+        AbstractCreator creatorA = new ConcreteCreatorA();
+        AbstractCreator creatorB = new ConcreteCreatorB();
 
-        ConcreateProductA productA = (ConcreateProductA) Client.createProduct(method, creatorA);
+        ConcreteProductA productA = (ConcreteProductA) Client.createProduct(method, creatorA);
         productA.setProductNo(1L);
         productA.setProductName("ProductA");
         productA.setAProperty("AAAA");
-        ConcreateProductB productB = (ConcreateProductB) Client.createProduct(method, creatorB);
+        ConcreteProductB productB = (ConcreteProductB) Client.createProduct(method, creatorB);
         productB.setProductNo(2L);
         productB.setProductName("ProductB");
         productB.setBProperty("BBBB");

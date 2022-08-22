@@ -4,28 +4,28 @@ import com.alibaba.fastjson.JSON;
 
 /**
  * 组成部分
- *      Prototype  ConcreatePrototype Client
+ *      Prototype ConcretePrototype Client
  *      这里的Prototype 就是提供的抽象产品 AbstractProduct
  */
 public class Client {
 
-    public static ConcreateProductA createProduct(ConcreateProductA productA) throws CloneNotSupportedException {
-        return (ConcreateProductA) productA.clone();
+    public static ConcreteProductA createProduct(ConcreteProductA productA) throws CloneNotSupportedException {
+        return (ConcreteProductA) productA.clone();
     }
 
-    public static ConcreateProductB createProduct(ConcreateProductB productB) throws CloneNotSupportedException {
-        return (ConcreateProductB) productB.clone();
+    public static ConcreteProductB createProduct(ConcreteProductB productB) throws CloneNotSupportedException {
+        return (ConcreteProductB) productB.clone();
     }
 
     public static void main(String[] args) throws CloneNotSupportedException {
-        ConcreateProductA productA = Client.createProduct(new ConcreateProductA());
+        ConcreteProductA productA = Client.createProduct(new ConcreteProductA());
         productA.setProductNo(1L);
-        productA.setProductName("ConcreateProductA");
+        productA.setProductName("ConcreteProductA");
         productA.setAProperty("AAAA");
 
-        ConcreateProductB productB = Client.createProduct(new ConcreateProductB());
+        ConcreteProductB productB = Client.createProduct(new ConcreteProductB());
         productB.setProductNo(2L);
-        productB.setProductName("ConcreateProductB");
+        productB.setProductName("ConcreteProductB");
         productB.setBProperty("BBBB");
 
         System.out.println("productA:" + JSON.toJSONString(productA));

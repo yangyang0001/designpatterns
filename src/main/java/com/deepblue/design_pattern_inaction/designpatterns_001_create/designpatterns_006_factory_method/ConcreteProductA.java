@@ -5,6 +5,6 @@ import lombok.ToString;
 
 @Data
 @ToString
-public class ConcreateProductB extends AbstractProduct{
-    private String bProperty;
+public class ConcreteProductA extends AbstractProduct{
+    private String aProperty;
 }

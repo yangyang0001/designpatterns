@@ -5,15 +5,15 @@ import lombok.ToString;
 
 @Data
 @ToString
-public class ConcreateDecoratorA extends Decorator{
+public class ConcreteDecoratorA extends Decorator{
     @Override
     public void draw() {
-        System.out.println("ConcreateDecoratorA draw()");
+        System.out.println("ConcreteDecoratorA draw()");
         component.draw();
-        concreateDraw();
+        concreteDraw();
     }
 
-    public void concreateDraw() {
-        System.out.println("ConcreateDecoratorA concreateDraw()");
+    public void concreteDraw() {
+        System.out.println("ConcreteDecoratorA concreteDraw()");
     }
 }

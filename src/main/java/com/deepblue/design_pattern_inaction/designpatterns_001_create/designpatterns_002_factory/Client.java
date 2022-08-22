@@ -9,10 +9,10 @@ public class Client {
     }
 
     public static void main(String[] args) {
-        AbstractFactory factoryA = new ConcreateFactoryA();
+        AbstractFactory factoryA = new ConcreteFactoryA();
         AbstractProduct productA = Client.getProduct(factoryA);
 
-        AbstractFactory factoryB = new ConcreateFactoryB();
+        AbstractFactory factoryB = new ConcreteFactoryB();
         AbstractProduct productB = Client.getProduct(factoryB);
 
         System.out.println("productA: " + JSON.toJSONString(productA));

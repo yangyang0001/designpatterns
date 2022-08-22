@@ -1,11 +1,10 @@
 package com.deepblue.design_pattern_inaction.designpatterns_001_create.designpatterns_002_factory;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.ToString;
+import lombok.*;
 
 @Data
 @AllArgsConstructor
 @ToString
-public class ConcreateProductB extends AbstractProduct{
+public class ConcreteProductA extends AbstractProduct{
+
 }

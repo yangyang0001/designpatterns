@@ -1,6 +1,6 @@
 package com.deepblue.design_pattern_inaction.designpatterns_001_create.designpatterns_004_builder;
 
-public class ConcreateBuilderB implements AbstractBuilder{
+public class ConcreteBuilderB implements AbstractBuilder{
 
     @Override
     public ProductB createProduct() {

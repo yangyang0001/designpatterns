@@ -10,7 +10,7 @@ import java.util.Map;
  * 思考：
  *      一个Director 可以有 n 个生产产品的方法, 同样Builder 可以有 n 个！
  * 总结：
- *      AbstractDirector ConcreateDirector AbstractBuilder ConcreateBuilder Product Client 组成
+ *      AbstractDirector ConcreteDirector AbstractBuilder ConcreteBuilder Product Client 组成
  */
 public class Client {
 
