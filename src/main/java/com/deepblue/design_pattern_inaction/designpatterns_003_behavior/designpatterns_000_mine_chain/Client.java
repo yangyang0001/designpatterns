@@ -1,9 +1,9 @@
-package com.deepblue.design_pattern_inaction.designpatterns_003_behavior.designpatterns_000_chain_of_responsibility;
+package com.deepblue.design_pattern_inaction.designpatterns_003_behavior.designpatterns_000_mine_chain;
 
 /**
  *
  */
-public class Main {
+public class Client {
 
     public static void main(String[] args) {
 
